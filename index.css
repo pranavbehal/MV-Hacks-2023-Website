@@ -68,7 +68,9 @@ a:hover {
   transition: 0.5s;
   text-align: center;
   z-index: 1;
+  background-color: var(--bg-color)
 }
+
 .nav-link {
   list-style: none;
   color: white !important;
@@ -96,6 +98,20 @@ a:hover {
   color: white !important;
 }
 
+.hero-title {
+  top: 50%;
+}
+
+.hero-date {
+  font-size: 25px;
+}
+
+.hero-tagline {
+  font-size: 35px;
+  margin-bottom: 50%
+}
+
+/* Contact Form */
 .contact-form-field {
   background: none;
   line-height: 20px;
@@ -134,7 +150,17 @@ a:hover {
 }
 
 .for-who-div {
-  display: flex;
+  padding: 20px;
+}
+
+.two-split-div {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.footer {
+  background-color: var(--secondary-mt-color);
 }
 
 /* About Page */
