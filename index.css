@@ -106,17 +106,19 @@ a:hover {
 
 .hero-title {
   top: 50%;
+  margin-bottom: none;
+  padding-bottom: none;
 }
 
 .hero-date {
   font-size: 25px;
-  margin-top: -30px;
+  margin-top: none;
 }
 
 .hero-tagline {
   font-size: 25px;
-  margin-top: -30px;
-  margin-bottom: 50vh;
+  margin-top: none;
+  margin-bottom: 40vh;
 }
 
 /* Contact Form */
@@ -162,15 +164,19 @@ a:hover {
 }
 
 .two-split-div-left {
-  width: 50%;
+  width: 45%;
   float: left;
   padding: 20px;
 }
 
 .two-split-div-right {
-  width: 50%;
+  width: 45%;
   float: right;
   padding: 20px;
+}
+
+.timeline-div, .current-sponsors-div, .lfsponsors-div, .contact, .footer {
+  clear: both;
 }
 
 .footer {
