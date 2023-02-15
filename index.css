@@ -33,7 +33,53 @@ body {
   background-color: var(--bg-color);
   color: white;
   font-family: Open Sans;
-  margin: 0% 10%;
+  overflow-x: hidden;
+}
+
+.body-content {
+  margin: 0% 7%;
+}
+
+@media only screen and (max-width: 600px) {
+  .body-content {
+    margin: 0% 6.5%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .body-content {
+    margin: 0% 9%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .body-content {
+    margin: 0% 8%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .body-content {
+    margin: 0% 7%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .body-content {
+    margin: 0% 7%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .body-content {
+    margin: 0% 7%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .body-content {
+    margin: 0% 9%;
+  }
 }
 
 h1 {
@@ -65,11 +111,15 @@ a:hover {
 .nav {
   padding: 30px 5%;
   position: sticky;
+  width: 100%;
+  height: 100%;
   top: 0;
   transition: 0.5s;
   text-align: center;
   z-index: 1;
-  background-color: var(--bg-color)
+  /* background-color: var(--bg-color) */
+  background-color: none;
+  backdrop-filter: blur(10px);
 }
 
 .nav-link {
@@ -102,10 +152,11 @@ a:hover {
 .hero-section-div {
   height: 100%;
   width: 100%;
+  top: 50%;
+  transform: translate(0%, 100%);
 }
 
 .hero-title {
-  top: 50%;
   margin-bottom: none;
   padding-bottom: none;
 }
@@ -118,7 +169,7 @@ a:hover {
 .hero-tagline {
   font-size: 25px;
   margin-top: -60px;
-  margin-bottom: 40vh;
+  margin-bottom: 60vh;
 }
 
 /* Contact Form */
@@ -159,23 +210,36 @@ a:hover {
   cursor: pointer;
 }
 
+.form-thanks {
+  text-align: center;
+  transform: translate(0%, 200%);
+}
+
+.form-thanks-h2 {
+  font-size: 50px;
+}
+
 .for-who-div {
-  padding: 20px;
+  padding: 2%;
 }
 
 .two-split-div-left {
   width: 45%;
   float: left;
-  padding: 20px;
+  padding: 2%;
 }
 
 .two-split-div-right {
   width: 45%;
   float: right;
-  padding: 20px;
+  padding: 2%;
 }
 
-.timeline-div, .current-sponsors-div, .lfsponsors-div, .contact, .footer {
+.timeline-div,
+.current-sponsors-div,
+.lfsponsors-div,
+.contact,
+.footer {
   clear: both;
 }
 
