@@ -112,12 +112,12 @@ a:hover {
 
 .hero-date {
   font-size: 25px;
-  margin-top: none;
+  margin-top: -70px;
 }
 
 .hero-tagline {
   font-size: 25px;
-  margin-top: none;
+  margin-top: -75px;
   margin-bottom: 40vh;
 }
 
