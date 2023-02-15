@@ -34,7 +34,6 @@ body {
   color: white;
   font-family: Open Sans;
   margin: 0% 10%;
-  float: none;
 }
 
 h1 {
@@ -45,7 +44,7 @@ h1 {
 h2 {
   font-size: 30px;
   color: var(--main-color);
-  margin-top: 30px;
+  padding-top: 50px;
 }
 
 p {
@@ -111,10 +110,13 @@ a:hover {
 
 .hero-date {
   font-size: 25px;
+  margin-top: -30px;
 }
 
 .hero-tagline {
   font-size: 25px;
+  margin-top: -30px;
+  margin-bottom: 50vh;
 }
 
 /* Contact Form */
@@ -159,9 +161,15 @@ a:hover {
   padding: 20px;
 }
 
-.two-split-div {
+.two-split-div-left {
   width: 50%;
   float: left;
+  padding: 20px;
+}
+
+.two-split-div-right {
+  width: 50%;
+  float: right;
   padding: 20px;
 }
 
