@@ -1,0 +1,545 @@
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --dm-dark-gray: #18181b;
+  --dm-medium-gray: #3f3f46;
+  --dm-light-gray: #59595e;
+  --dm-dark-blue: #17171d;
+
+  --cultured: #f8f9faff;
+  --cultured-2: #e9ecefff;
+  --light-gray: #ced4daff;
+
+  --primary-color: #5cdb95;
+  --secondary-color: #519ae4;
+  --third-color: #379683;
+  --fourth-color: #8ee4af;
+  --light-type: #edf5e1;
+}
+
+body {
+  background-color: var(--dm-dark-blue);
+  color: var(--light-type);
+  font-family: Open Sans;
+  margin: 0% 10%;
+}
+
+h1 {
+  font-size: 60px;
+  color: var(--third-color);
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 20px;
+  color: var(--light-type);
+}
+
+a:link {
+  color: var(--light-type);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.nav {
+  padding: 30px 5%;
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 1;
+}
+.nav-link {
+  list-style: none;
+  color: var(--light-type) !important;
+  text-decoration: none;
+  margin: 0% 2%;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: 25px;
+  z-index: inherit;
+}
+
+.home-nav-link {
+  margin-right: 0%;
+}
+
+.nav-li {
+  display: inline;
+  margin: none;
+  padding: 20px 1.5%;
+  border-radius: 50px;
+}
+
+.nav-li:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--light-type) !important;
+}
+
+.contact-form-field {
+  background: none;
+  line-height: 20px;
+  font-family: "Montserrat";
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+  color: var(--cultured-2);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: var(--dm-light-gray);
+}
+
+.contact-form-field:focus {
+  border-color: var(--cultured-2);
+}
+
+#contact-message-field {
+  width: 70%;
+  height: 150px;
+}
+
+#contact-form-button {
+  margin-top: 40px;
+  background: none;
+  color: var(--cultured-2);
+  border-color: var(--cultured-2);
+  font-size: 20px;
+  font-family: "Montserrat";
+  margin-bottom: 20vh;
+  padding: 10px;
+}
+
+#contact-form-button:hover {
+  cursor: pointer;
+}
+
+.for-who-div {
+  display: flex;
+}
+
+/* About Page */
+.qa-section {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.qa-section h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-size: 50px;
+  text-align: center;
+}
+
+.qa-section p {
+  font-style: italic;
+}
+
+.question {
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+  font-family: Montserrat;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.answer {
+  display: none;
+  margin-left: 15px;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  font-family: Montserrat;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 22px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .qa-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .qa-section h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .qa-section p {
+    font-style: italic;
+  }
+
+  .question {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .answer {
+    display: none;
+    margin-left: 15px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
