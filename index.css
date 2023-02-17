@@ -254,6 +254,19 @@ a:hover {
     padding: 2%;
     clear: both;
   }
+
+  .hero-section-div {
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    transform: translate(0%, 50%);
+  }
+
+  .hero-tagline {
+    font-size: 25px;
+    margin-top: -30px;
+    margin-bottom: 200px;
+  }
 }
 
 @media screen and (min-width: 900px) {
