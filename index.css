@@ -186,6 +186,8 @@ a:hover {
 
   .nav-logo-div {
     display: block !important;
+    padding: none;
+    margin: none;
   }
 
   .nav-logo {
