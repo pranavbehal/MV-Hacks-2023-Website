@@ -161,6 +161,27 @@ a:hover {
   border-radius: 50px;
 }
 
+.for-sponsors-button {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin: 15px 20px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+.for-sponsors-button:hover {
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 900px) {
   .web-nav {
     display: none;
