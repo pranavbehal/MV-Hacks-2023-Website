@@ -154,10 +154,6 @@ a:hover {
   margin-top: -25px;
 }
 
-.home-nav-link {
-  margin-right: 0%;
-}
-
 .nav-li {
   display: inline;
   margin: none;
@@ -386,6 +382,14 @@ a:hover {
 
 .footer {
   background-color: var(--secondary-mt-color);
+  color: var(--cultured-2);
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 20px;
+  width: 100%;
 }
 
 /* About Page */
@@ -753,5 +757,49 @@ a:hover {
     margin-bottom: 20px;
     margin-left: 14%;
     margin-right: 15%;
+  }
+}
+
+/* Sponsors Page */
+
+.sponsorship-perks-div {
+  text-align: center;
+}
+
+.sponsorship-perks-img {
+  height: 50%;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sponsorship-perks-img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .sponsorship-perks-img {
+    height: 90%;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sponsorship-perks-img {
+    height: 70%;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .sponsorship-perks-img {
+    height: 50%;
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
